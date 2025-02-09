@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day</title>
+    <style>
+        body {
+            background-color: #ff4d4d;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .envelope {
+            width: 300px;
+            height: 200px;
+            background-color: red;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .message {
+            color: beige;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+        }
+        @keyframes floatAnimation {
+            from { transform: translateY(100vh); opacity: 1; }
+            to { transform: translateY(-10vh); opacity: 0; }
+        }
+        .floating-element {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            animation: floatAnimation 5s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="envelope" onclick="openPage()">
+        <div class="message">Happy Valentine's Day, Dear Kochuzzeee!!</div>
+    </div>
+    <script>
+        function openPage() {
+            window.location.href = "page1.html";
+        }
+    </script>
+</body>
+</html>
